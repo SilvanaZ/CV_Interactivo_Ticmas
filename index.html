@@ -6,51 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cv Interactivo</title>
     <link rel="stylesheet" href="./Estilos/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
+
 <body>
-    <nav>
-        <ul id="bar">
-            <li><a class="active" href="./index.html"> Home</a></li>
-            <li><a href="#about"> Sobre mi</a></li>
-            <li><a href="#projects"> Proyectos</a></li>
-            <li><a href="#media"> Mis Redes</a></li>
-            <li><a href="#skills"> Mis Skills</a></li>
+    <nav class="navbar">
+        <div class="logo">MI CV</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#redes">Redes</a></li>
+            <li><a href="#skills">Skills</a></li>
         </ul>
-        
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </nav>
-    <h1>Silvana Zalazar</h1>
-    <p>Desarrolladora Frontend</p>
-    <img src="./img/silvana.jpeg" id="foto"> <h2 id="about">Bienvenid@ 🦋🌸𓍯૮₍ ´• ˕ • ₎ა🌸🧸</h2>
-    <p>Soy una desarrolladora frontend con habilidades sólidas en HTML, CSS, JavaScript, React, Vue y Angular. Me apasiona la creación de interfaces de usuario innovadoras y funcionales que mejoran la experiencia del usuario y generan valor para el negocio.. 
-        Soy muy sociable, proactiva y siempre vas a poder encontrarme por acá ♡☆♡
-        
-        Me gusta cantar, adoro los gatos y soy detallista por lo cual a la hora de trabajar en la estructura de un sitio web, trato que sea vea limpio y legible.
-        Me gusta trabajar en equipo y sumo conocimiento mediante cursos para mantener mi codigo actualizado ♡</p>
-        <ul>
-        <h2 id="skills">Skills</h2>
-        <li> Javascript</li>
-        <li> Node JS</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Mongo DB</li>
-        <li>Mysql</li>
-        <li>React</li>
-        <li>Hooks</li>
-    </ul>
-    <h2 id="projects">Proyectos en los que trabaje:</h2>
-    <p>Puerto Pc</p>
-    <p>Portfolio</p>
-    <p>Pokedex</p>
-    <br><br><br>
-    <footer>
-        <h3 id="media">Mis redes </h3>
-        <ul>
-        <li><a href="https://www.github.com/silvanaZ"> Mi github 🌐</a></li>
-        <li><a href="https://www.linkedin.com/in/silvana-r-zalazar">Mi linkedin </a></li>
-        <li><a href="https://portfolio-sz.netlify.app"> Mi portfolio </a></li>
-    </ul>
+
+    <div class="about" id="about">
+        <h1>Silvana Zalazar</h1>
+        <h3>Desarrolladora Full Stack</h3>
+        <img src="./img/silvana.jpeg" id="foto">
+        <h2>
+            Bienvenid@ 🦋🌸(づ๑•ᴗ•๑)づ🌸🧸
+        </h2>
+        <div>
+            <p>
+                Soy una desarrolladora Full Stack con habilidades sólidas en HTML, CSS, JavaScript, React y Angular. Me
+                apasiona
+                la creación de interfaces de usuario innovadoras y funcionales que mejoran la experiencia del usuario y
+                generan
+                valor para el negocio.
+                Soy muy sociable, proactiva y siempre vas a poder encontrarme por acá ♡☆♡
+                Me gusta cantar, adoro los gatos y soy detallista por lo cual a la hora de trabajar en la estructura de
+                un sitio
+                web, trato que sea vea limpio y legible.
+                <br>
+                Me gusta trabajar en equipo y sumo conocimiento mediante cursos para mantener mi código actualizado.
+            </p>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <ul id="lista">
+            <h2>Skills</h2>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>React</li>
+            <li>Hooks</li>
+        </ul>
+    </div>
+
+    <div class="projects">
+        <h2>Proyectos en los que trabajé:</h2>
+        <p>Puerto Pc</p>
+        <p>Portfolio</p>
+        <p>Pokedex</p>
+    </div>
+
+    <footer class="redes" id="redes">
+        <div class="footer-all">
+            <div class="payment-footer">
+                <div class="info-footer">
+                    <h3>Mis redes </h3>
+                    <div class="contact-footer">
+                        <a class="text-footer2" href="https://www.github.com/silvanaZ">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a class="text-footer2" href="https://www.linkedin.com/in/silvana-r-zalazar">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a class="text-footer2" href="https://portfolio-sz.netlify.app">
+                            <i class="fas fa-briefcase"></i> Portfolio
+                        </a>
+                    </div>
+                </div>
+                <div class="copyright-footer-box">
+                    <p id="copyright-footer">
+                        &copy; 2023 Todos los derechos reservados
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="./mynav.js"></script>
 </body>
 
 </html>
